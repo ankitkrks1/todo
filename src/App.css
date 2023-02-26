@@ -1,0 +1,65 @@
+body{
+    background-image: url('./assets/mount.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns with equal width */
+    grid-gap: 0; /* Add a 20px gap between the items */
+}
+.container{
+    border-radius: 1vh;
+    padding: 1vw;
+    /* border: 1px solid black; */
+    margin: 0.5vw;
+    background: rgba(234,237,240,255);
+    color: #2c3e5e;
+}
+
+.task{
+    border-radius: 8px;
+    border: 1px solid #352727;
+    margin-top: 2vh;
+    background: rgba(255,255,255,255);
+    text-align: center;
+    padding: 1vh;
+    color: #2c3e5e;
+
+}
+.btn{
+    border: 0px solid #eaedf0;
+    font-size: 1.23rem;
+    margin: 1vh;
+    background: rgba(234,237,240,255);
+    color: #7d869a;
+}
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 10000; /* Make sure the modal is on top of the overlay */
+    width: 25vw;
+
+  }
+  
+  /* Style the modal content */
+  .modal-content {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .modal-content input {
+    margin: 1vw;
+    width: 20vw;
+    height: 2vh;
+  }
+
+  .modal-content button{
+    margin: 1vw;
+  }
