@@ -35,6 +35,9 @@ body{
     background: rgba(234,237,240,255);
     color: #7d869a;
 }
+.del{
+  text-align: right;
+}
 #modal {
     position: fixed;
     top: 50%;

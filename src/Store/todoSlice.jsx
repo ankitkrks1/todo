@@ -44,10 +44,14 @@ export const todoSlice = createSlice({
       task.push(action.payload);
       state.tasks = task;
     },
+    del: (state,action) =>{
+      const task = state.tasks.filter(v=>v.id!==action.payload.id)
+      state.tasks = task
+    }
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { add, edit } = todoSlice.actions;
+export const { add, edit,del } = todoSlice.actions;
 
 export default todoSlice.reducer;
